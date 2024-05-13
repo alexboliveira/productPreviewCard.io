@@ -1,0 +1,173 @@
+/*modules productPreviewCard*/
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+:root {
+    --corPrimaria: hsl(158, 36%, 37%);
+    --corSecundaria: hsl(30, 38%, 92%);
+    --corNeutra1: hsl(212, 21%, 14%);
+    --corNeutra2: hsl(228, 12%, 48%);
+    --corNeutra3: hsl(0, 0%, 100%);
+
+  }
+
+
+
+
+
+.productPreviewCard{
+    display:flex;
+    height: auto;   
+}
+
+
+.productPreviewCard div{
+
+    
+}
+
+.productPreviewCard div:nth-of-type(1){
+    width: calc(320px + 56px);
+    background-image: url("./img/image-product-desktop.jpg");
+    background-size: cover;
+    border-radius: 14px 0 0px 14px;
+    /*border-radius: 14px 0 0px 14pc;   -  assim fica muito legal*/
+
+}
+
+
+
+.productPreviewCard div:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 320px;
+    border-radius: 0px 14px 14px 0px;
+    
+}
+
+.productPreviewCard div:nth-of-type(2) h1{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: var(--corNeutra2);
+  padding-top: 28px;
+  padding-bottom: 28px;
+  font-size: 14px;
+  letter-spacing: 5px;
+    
+}
+
+.productPreviewCard div:nth-of-type(2) h2{
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+  font-size: 42px;  
+  margin-bottom: 28px;
+  
+    
+}
+
+.productPreviewCard div:nth-of-type(2) p{
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--corNeutra2);
+    margin-bottom: 28px;
+    
+}
+
+.productPreviewCard div:nth-of-type(2) ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.productPreviewCard div:nth-of-type(2) ul li{
+    list-style-type: none;
+    
+}
+
+.productPreviewCard div:nth-of-type(2) ul li:nth-of-type(1){
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+
+  color: var(--corPrimaria);
+  font-size: 28px;
+
+}
+
+.productPreviewCard div:nth-of-type(2) ul li:nth-of-type(2){
+    text-decoration: line-through;
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+    font-size: 14px;  
+
+}
+
+.productPreviewCard div:nth-of-type(2) button{
+    border: 0;
+    padding: 14px;
+    background-color: var(--corPrimaria);
+    color: var(--corNeutra3);
+    border-radius: 14px;
+    margin-bottom: 28px;
+    margin-top: 28px;
+
+    font-family: "Fraunces", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "SOFT" 0,
+    "WONK" 0;
+
+
+    
+}
+
+
+@media only screen and (max-width: 800px){
+    .productPreviewCard{
+        flex-direction: column;
+    }
+    .productPreviewCard div:nth-of-type(1){
+        background-image: url("./img/image-product-mobile.jpg");
+        height: 25vh;
+        border-radius: 14px 14px 0 0;
+    }
+
+    .productPreviewCard div:nth-of-type(2){
+        border-radius:  0 0 14px 14px;
+    }
+
+
+
+}
+
+
+
+
+
